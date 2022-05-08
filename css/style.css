@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,700;1,100;1,300&family=Qwitcher+Grypen:wght@400;700&family=Roboto:ital,wght@0,300;0,400;1,400&display=swap');
+
+:root {
+    --dark-one: #333;
+    --dark-two: #7a7a7a;
+    --main-colour: #784cfb;
+    --light-one: #fff;
+    --light-two: #f9fafb;
+    --light-three: #f6f7fb;
+}
+
+/* General Styles */
+
+*, 
+*::before, 
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, button, input, textarea {
+    font-family: "Lato", "Roboto";
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    width: 100%;
+}
+
+.container{
+    position: relative;
+    z-index: 5;
+    max-width: 92rem;
+    padding: 0 4rem;
+    margin: 0 auto;
+    background-color: var(--light-three);
+}
+
+/* End of General Styles */
+
+/* Header */
+
+header {
+    width: 100%;
+    background-color: var(--background-colour);
+    overflow: hidden;
+}
+
+nav {
+    width: 100%;
+    position: relative;
+    z-index: 50;
+}
+
+nav .container{
+    display: flex;
+    justify-content: space-between;
+    height: 6rem;
+    align-items: center;
+}
+
+.logo{
+    width: 80px;
+    display: flex;
+    /* chekc what happens if line below commented out */
+    align-items: center; 
+}
+
+.links ul{
+    display: flex;
+}
+
+.links a{
+    display: inline-block;
+    padding: 0.9rem 1.2rem;
+    color: var(--dark-one);
+    font-size: 1.05rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    line-height: 1;
+    transition: 0.3s;
+}
+
+.links a:hover {
+    color: var(--main-colour);
+}
+/* End of Header */
