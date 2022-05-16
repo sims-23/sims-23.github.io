@@ -1,14 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,700;1,100;1,300&family=Abril+Fatface&family=Roboto:ital,wght@0,300;0,400;1,400&display=swap');
 
 :root {
-    --dark-one: #2D2D2A /*rgb 45 45 42*/;
+    --dark-one: #28282b /*rgb 45 45 42*/;
     /* --dark-one: rgb(116, 140, 203); */
-    --dark-two: #4C4C47 /*rgb 76 76 71*/;
-    --dark-three: rgb(14, 13, 20);
+    --dark-two: #363a3f /*rgb 76 76 71*/;
+    --dark-three: rgb(19, 18, 28);
+    --dark-four: rgb(0, 0, 0);
     --main-colour-1: rgb(87, 133, 202);
     --main-colour-2: #6c48fc /*rgb 119 45 139*/;
-    --main-colour-3: rgb(40, 70, 90) /*rgb 27 231 255*/;
-
+    --main-colour-3: rgb(21, 46, 60) /*rgb 27 231 255*/;
+    --main-colour-4: rgb(58,58,137);
+    --dark-colour-purple: rgb(29, 29, 71);
     --light-one: rgb(116, 140, 203);
     --light-two: #f9fafb;
     --light-three: #f6f7fb;
@@ -239,6 +241,41 @@ nav .container{
     transition: .4s;
     cursor: pointer;
 }
+
+/* end about */
+
+/* skills section */
+.skills {
+    background-color: var(--dark-four);
+    color: var(--light-three);
+    height: 80vh;
+    width: 100%;
+    text-align: center;
+    padding-top: 3%;
+}
+
+.skills h1 {
+    font-family: Lato;
+    color: #f1f1f1;
+    font-size: 60px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+.skills .set{
+    width: 400px;
+    display: inline-block;
+    padding: 2% 5%;
+    /* background: linear-gradient(var(--main-colour-3), var(--dark-colour-purple)); */
+    background: linear-gradient(var(--main-colour-3), var(--dark-three));
+    margin: 20px 10px;
+}
+
+
+/* end skills section */
+
+
+/* responsive */
 
 @media screen and (max-width: 1180px) {
     .about{
