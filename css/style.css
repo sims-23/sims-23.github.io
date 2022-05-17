@@ -4,7 +4,7 @@
     --dark-one: #28282b /*rgb 45 45 42*/;
     /* --dark-one: rgb(116, 140, 203); */
     --dark-two: #363a3f /*rgb 76 76 71*/;
-    --dark-three: rgb(19, 18, 28);
+    --dark-three: rgb(18, 22, 28);
     --dark-four: rgb(0, 0, 0);
     --main-colour-1: rgb(87, 133, 202);
     --main-colour-2: #6c48fc /*rgb 119 45 139*/;
@@ -165,7 +165,7 @@ nav .container{
 
 .about-me {
     width: 100%;
-    height: 50vh;
+    height: 80vh;
     background-color: var(--dark-three);
     display: flex;
     justify-content: center;
@@ -174,13 +174,13 @@ nav .container{
 
 .about-me .content img{
     height: auto;
-    width: 25%;
+    width: 30%;
     max-width: 100%;
     border-radius: 50%;
 }
 
 .text {
-    width: 75%;
+    width: 70%;
     max-width: 100%;
     padding: 0 10%;
     color: var(--light-three)
@@ -269,11 +269,56 @@ nav .container{
     /* background: linear-gradient(var(--main-colour-3), var(--dark-colour-purple)); */
     background: linear-gradient(var(--main-colour-3), var(--dark-three));
     margin: 20px 10px;
+    border-radius: 5px;
 }
-
-
 /* end skills section */
 
+/* projects */
+.my_projects {
+    background-color: var(--dark-three);
+    width: 100%;
+    height: 80vh;
+    text-align: center;
+    color: var(--light-two);
+    padding-top: 3%;
+}
+
+.project_container {
+    padding: 1rem 1rem;
+    
+}
+
+.project_card {
+    display: inline-flex;
+    width: 30rem;
+    background-color: var(--main-colour-1);
+    padding: 1rem;
+}
+
+/* end of projects */
+
+/* blog */
+.blog {
+    background-image: url(../img/ashwini-chaudhary-monty-czPD6s3JQmk-unsplash.jpg);
+    color: var(--light-three);
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+    padding-top: 3%;
+    background-size: cover;
+}
+/* end of blog */
+
+/* contact */
+.contact {
+    background-color: var(--dark-four);
+    width: 100%;
+    height: 80vh;
+    text-align: center;
+    color: var(--light-two);
+    padding-top: 3%;
+}
+/* end of contact */
 
 /* responsive */
 
