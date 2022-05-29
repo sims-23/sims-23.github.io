@@ -24,6 +24,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 body, button, input, textarea {
@@ -61,7 +62,7 @@ nav {
 
 nav .container{
     position: relative;
-    z-index: 5;
+    z-index: 1000;
     max-width: 92rem;
     padding: 0 4rem;
     margin: 0 auto;
@@ -70,6 +71,26 @@ nav .container{
     justify-content: space-between;
     height: 6rem;
     align-items: center;
+}
+
+#nav.fixed {
+    position: fixed;
+    background-color: rgba(10, 8, 29);
+    box-shadow: 5px 5px 19px 0px rgba(0, 0, 0, 0.5);
+}
+#nav.fixed ul li img {
+    height: 36px;
+}
+#nav.fixed ul li a {
+font-size: 14px;
+}
+
+#menu-icon{
+    font-size: 35px;
+    z-index: 1001;
+    cursor: pointer;
+    display: none;
+    color: var(--light-one);
 }
 
 .logo{
@@ -245,6 +266,15 @@ nav .container{
 /* end about */
 
 /* skills section */
+
+/* TODO: change place */
+.anchor{
+    display: block;
+    height: 250px; /*same height as header*/
+    margin-top: -250px; /*same height as header*/
+    visibility: hidden;
+  } 
+
 .skills {
     background-color: var(--dark-four);
     color: var(--light-three);
@@ -405,6 +435,7 @@ nav .container{
         height: auto;
         padding: 70px 0px;
     }
+    
 }
 
 @media screen and (max-width: 650px) {
@@ -418,11 +449,12 @@ nav .container{
     }
 }
 
+/* 
 @media screen and (max-width: 992px){
     .blog .section-content .cards{
         grid-template-columns: (2, 1fr);
     }
-}
+} */
 
 @media screen and (max-width: 768px){
     .blog .section-content .cards{

@@ -5,16 +5,19 @@
         <meta name="viewport" content="width=device-width", initial="scale=1.0"/>
         <title>Sim Sanghera | Machine Learning and Data Science</title>
         <link rel="stylesheet" href="./css/style.css">
+        <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
     </head>
     <body>
         <main>
             <header>
-                <nav>
+                <nav id="nav">
                     <div class="container">
                         <!-- change logo class later -->
                         <div class="logo"> 
                             <img src="./img/logo.png" alt="">
                         </div>
+                        <i class='bx bx-menu' id="menu-icon" ></i>
                         <div class="links">
                             <ul>
                                 <li>
@@ -24,7 +27,7 @@
                                     <a href="#about">About Me</a>
                                 </li>
                                 <li>
-                                    <a href="#skills">Skills & Courses</a>
+                                    <a href="#skills"> Skills & Courses</a>
                                 </li>
                                 <li>
                                     <a href="#projects">Projects</a>
@@ -45,11 +48,12 @@
                     <h1><span>Sim Sanghera</span></h1>
                     <span class="cen">Machine Learning and Data Science</span>
                     <p>I have recently graduated from the University of British Columbia<br> with a specialization in Computer Science and Statistics. <br> 
-                        Also a participant in the AI4Good lab.</p>
+                        Currently, I am a participant in the AI4Good lab.</p>
                     <a class="button" href="#">Click Here</a>
                 </div>
             </div>
-            <div class="about-me" id="about">
+            <div class="about-me">
+                <span class="anchor" id="about"></span>
                 <div class="content">
                     <img src="img/profile_pic.JPG">
                     <div class="text">
@@ -62,8 +66,10 @@
                     </div>
                 </div>
             </div>
-            <div class="skills" id="skills">
+            <div class="skills">
+               
                 <h1>Skills</h1>
+                <span class="anchor" id="skills"></span>
                 <div class="set">
                     <h2>stuff</h2>
                     <ul>
@@ -89,8 +95,9 @@
                     </ul>
                 </div>
             </div>
-            <div class="my_projects" id="projects">
+            <div class="my_projects">
                 <h2 class="section_title">My Projects</h2>
+                <span class="anchor" id="projects"></span>
                 <div class="project_container container grid">
                     <div class="project_card">
                         <img src="" alt="something" class="project_img">
@@ -109,7 +116,8 @@
                     </div>
                 </div>
             </div>
-            <div class="blog" id="blog">
+            <div class="blog">
+                <span class="anchor" id="blog"></span>
                 <div class="section-content">
                     <h2 class="section_title">Latest Posts</h2>
                     <div class="cards">
