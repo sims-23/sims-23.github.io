@@ -1,12 +1,17 @@
-const nav = document.querySelector('#nav');
-let navTop = nav.offsetTop;
-
-function fixedNav() {
-  if (window.scrollY > 60) {    
-    nav.classList.add('fixed');
-  } else {
-    nav.classList.remove('fixed');    
-  }
-}
-
-window.addEventListener('scroll', fixedNav);
+const body = document.querySelector("body");
+    const navbar = document.querySelector(".navbar");
+    const menuBtn = document.querySelector(".menu-btn");
+    const cancelBtn = document.querySelector(".cancel-btn");
+    menuBtn.onclick = ()=>{
+      navbar.classList.add("show");
+      menuBtn.classList.add("hide");
+      body.classList.add("disabled");
+    }
+    cancelBtn.onclick = ()=>{
+      body.classList.remove("disabled");
+      navbar.classList.remove("show");
+      menuBtn.classList.remove("hide");
+    }
+    window.onscroll = ()=>{
+      this.scrollY > 20 ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");
+    }
