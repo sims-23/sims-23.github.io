@@ -306,14 +306,17 @@ header {
 
 .project_container {
     padding: 1rem 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
     
 }
 
 .project_card {
-    display: inline-flex;
     width: 30rem;
     background-color: var(--main-colour-1);
     padding: 1rem;
+    align-items: center;
 }
 
 /* end of projects */
@@ -353,13 +356,19 @@ header {
 }
 
 .blog .section-content .cards{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 50px;
+    /* display: grid;
+    grid-template-columns: repeat(3, 1fr); */
+    /* grid-gap: 50px; */
+    
     margin: 25px auto;
+    display: flex;
+    flex-wrap: wrap;
+    
 }
 
 .blog .section-content .cards .card{
+    flex: 20%;
+    margin: 3% 3%;
     width: 100%;
     background-color: var(--main-colour-3);
     position: relative;
@@ -508,11 +517,29 @@ header {
   }
 
 @media screen and (max-width: 768px){
+    .blog .section-content .cards .card{
+        flex-direction: column;
+        flex:10%;
+        height: 10%;
+        background-color: var(--main-colour-3);
+        position: relative;
+    }
     
-    .blog .section-content .cards{
+    /* .blog .section-content .cards{
         grid-template-columns: 1fr;
     }
+    .blog .section-content .cards .card{
+        width: 50vh;
+        height: auto;
+        background-color: var(--main-colour-3);
+        position: relative;
+    }
 
+    .blog .section-content .cards .card img{
+        
+    } */
+
+   
 
     /* .logo{
         min-height: 80vh;
