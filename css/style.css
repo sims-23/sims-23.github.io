@@ -123,13 +123,13 @@ header {
 }
 
 .hero-section .container {
+    margin-top: 80px;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
     color: #fff;
-    font-weight: 200;
 }
 
 .hero-section .container h1 {
@@ -146,7 +146,7 @@ header {
 }
 
 .hero-section .cen {
-    margin: 6px;
+    margin-top: 15px;
     display: block;
     font-size:  28px;
     font-weight: 400;
@@ -154,18 +154,18 @@ header {
 
 .hero-section p{
     margin-top: 10px;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     font-size: 20px;
     font-weight: 200;
 }
 
 .hero-section .button {
     color: #313131;
-    margin-top: 30px;
     padding: 10px 24px;
     background: #f1f1f1;
     text-decoration: none;
     transition: .6s;
+    border-radius: 5px;
 }
 
 .hero-section .button:hover {
@@ -477,228 +477,3 @@ header {
 }
 /* end of contact */
 
-  /* projects page */
-  /* end of project pages */
-
-  /* project page */
-  .project-page{
-    background-color: var(--dark-three);
-    height: 800vh;;
-}
-
-.project-page .summary{
-    display: flex;
-    padding-top: 200px;
-    align-items: flex-start;
-    background-color: var(--dark-four);
-    
-}
-
-/* .project-page .container{
-    transform: translate(-50%, -50%);
-    text-align: center;
-    top: 25%;
-    left: 50%;
-    padding-top: 15%;
-    position: absolute;
-} */
-
-.project-page .phase-1{
-    display: flex;
-    align-items: flex-start;
-    background-color: var(--dark-four);
-    
-}
-
-.project-page .summary img {
-     max-width: 600px;
-}
-
-.project-page .box-2 {
-    flex: 1;
-    padding: 2%
-    
-}
-.project-page h1 {
-  margin: 0;
-  font-family: "Lato";
-  text-transform: uppercase;
-  font-size:35px;
-  font-weight: 600;
-  color: #f6f7fb;
-
-}
-
-.project-page h2 {
-    color: #f6f7fb;
-    font-family: "Lato";
-    font-weight: 300;
-    font-size: 20px;
-}
-.project-page p {
-    color: #f6f7fb;
-    font-family: "Lato";
-    font-weight: 100;
-    font-size: 20px;
-}
-
-.project-page img{
-    width: 50%;
-    align-self: center;
-    height: auto;
-    margin-top: 10px;
-    
-}
-
-
-/* end of project page */
-
-/* responsive */
-
-@media screen and (max-width: 1180px) {
-    .about{
-        width: 100%;
-        height: auto;
-        padding: 70px 0px;
-    }
-    
-}
-
-@media screen and (max-width: 650px) {
-    .about .content img{
-        margin-bottom: 35px;
-    }
-
-    .text h1{
-        font-size: 60px;
-        margin-bottom: 25px;
-    }
-}
-
-/* 
-@media screen and (max-width: 992px){
-    .blog .section-content .cards{
-        grid-template-columns: (2, 1fr);
-    }
-} */
-
-/* @media (max-width: 1230px) {
-    .content{
-      padding: 0 60px;
-    }
-  }
-  @media (max-width: 1100px) {
-    .content{
-      padding: 0 40px;
-    }
-  }
-  @media (max-width: 900px) {
-    .content{
-      padding: 0 30px;
-    }
-  } */
-  @media (max-width: 868px) {
-    body.disabled{
-      overflow: hidden;
-    }
-    .icon{
-      display: block;
-    }
-    .icon.hide{
-      display: none;
-    }
-    .navbar .menu-list{
-      position: fixed;
-      height: 100vh;
-      width: 100%;
-      max-width: 400px;
-      left: -100%;
-      top: 0px;
-      display: block;
-      padding: 40px 0;
-      text-align: center;
-      background: #222;
-      transition: all 0.3s ease;
-    }
-    .navbar.show .menu-list{
-      left: 0%;
-    }
-    .navbar .menu-list li{
-      margin-top: 45px;
-    }
-    .navbar .menu-list li a{
-      font-size: 23px;
-      margin-left: -100%;
-      transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-    }
-    .navbar.show .menu-list li a{
-      margin-left: 0px;
-    }
-  }
-
-
-  
-  @media (max-width: 380px) {
-    .navbar .logo a{
-      font-size: 27px;
-    }
-  }
-
-@media screen and (max-width: 768px){
-    .blog .section-content .cards .card{
-        flex-direction: column;
-        flex:10%;
-        height: 10%;
-        background-color: var(--main-colour-3);
-        position: relative;
-    }
-
-    .my_projects {
-        height: 200vh;
-    }
-
-    .blog {
-        height: 200vh;
-    }
-    
-    /* .blog .section-content .cards{
-        grid-template-columns: 1fr;
-    }
-    .blog .section-content .cards .card{
-        width: 50vh;
-        height: auto;
-        background-color: var(--main-colour-3);
-        position: relative;
-    }
-
-    .blog .section-content .cards .card img{
-        
-    } */
-
-   
-
-    /* .logo{
-        min-height: 80vh;
-    } */
-    
-/* 
-
-    .icon {
-        display: block;
-    }
-
-    .icon.hamburger {
-        display: block;
-        margin-left: auto;
-    }
- */
-
-
-
-
-
-    /* nav .container .links.show{
-        display: flex;
-    } */
-
-}
