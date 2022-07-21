@@ -60,6 +60,20 @@
     .navbar.show .menu-list li a{
       margin-left: 0px;
     }
+
+    .content {
+        display: inline-block;
+        text-align: center;
+        align-items: center;
+        
+    }
+    .about-me .text {
+        display: inline-block;
+    }
+
+    .about-me img {
+        margin-bottom: 24px;
+    }
   }
 
   @media (max-width: 550px) {
