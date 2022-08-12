@@ -64,7 +64,7 @@ header {
   .navbar.sticky{
     background: #1b1b1b;
     padding: 10px 0;
-    box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.1);
+    box-shadow: 0px 3px 5px 0px rgba(161, 144, 144, 0.1);
   }
   .navbar .content{
     display: flex;
@@ -169,6 +169,7 @@ header {
 }
 
 .hero-section .button:hover {
+    cursor: pointer;
     opacity: .6;
 }
 
@@ -208,20 +209,11 @@ header {
     justify-content: space-around;
 }
 
-.about-me h1 {
-    font-family: Lato;
-    color: #f1f1f1;
-    font-size: 60px;
-    margin-bottom: 15px;
-    text-transform: uppercase;
-    text-align: center;
-}
-
 .text h5 {
     font-family: Lato;
     font-weight: 300;
     color: #f1f1f1;
-    font-size: 20px;
+    font-size: 25px;
     margin-bottom: 25px;
     text-transform: uppercase;
     letter-spacing: 2px;
@@ -239,15 +231,20 @@ header {
 }
 
 .about-me button{
-    background-color: var(--main-colour-1);
+    width: 150px;
+    text-align: center;
     color: var(--light-two);
+    padding: 10px 24px;
+    background: var(--main-colour-1);
+    text-decoration: none;
+    transition: .6s;
+    border-radius: 5px;
     border: 2px solid transparent;
-    text-transform: none;
-    padding: 10px 30px;
+    margin-right: 10px;
+    text-transform: uppercase;
 }
 
 .about-me button:hover{
-    transform: scale(1.2);
     background-color: transparent;
     border: 2px solid var(--main-colour-1);
     color: var(--main-colour-1);
@@ -281,7 +278,7 @@ header {
 .skills h1 {
     font-family: Lato;
     color: #f1f1f1;
-    font-size: 60px;
+    font-size: 45px;
     margin-bottom: 15px;
     text-transform: uppercase;
 }
@@ -297,8 +294,8 @@ header {
 }
 
 .skills .set{
-    width: 500px;
-    height: 60vh;
+    width: 400px;
+    height: 600px;
     
     display: inline-block;
     padding: 2% 5%;
@@ -319,6 +316,14 @@ header {
     padding-top: 8%;
     padding-bottom: 10%
     
+}
+
+.my_projects h1 {
+    font-family: Lato;
+    color: #f1f1f1;
+    font-size: 45px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
 }
 
 .project_container {
@@ -352,11 +357,17 @@ header {
 }
 
 .project_card .button{
-    background-color: var(--main-colour-2);
+    width: 150px;
+    text-align: center;
     color: var(--light-two);
+    padding: 10px 24px;
+    background: var(--main-colour-2);
+    text-decoration: none;
+    transition: .6s;
+    border-radius: 5px;
     border: 2px solid transparent;
-    text-transform: none;
-    padding: 10px 30px;
+    margin-right: 10px;
+    text-transform: uppercase;
 }
 
 .project_card .button:hover{
@@ -373,76 +384,78 @@ header {
 .blog {
     background-image: url(../img/ashwini-chaudhary-monty-czPD6s3JQmk-unsplash.jpg);
     color: var(--light-three);
-    height: 90vh;
+    height:  100%;
     width: 100%;
     text-align: center;
-    padding-top: 3%;
+    padding-top: 8%;
     background-size: cover;
+    padding-bottom: 10%
 }
 
-.blog .section-content{
-    width: 85%;
-    margin: 20px auto;
+.blog h1 {
+    font-family: Lato;
+    color: #f1f1f1;
+    font-size: 45px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
 }
 
-.blog .section-content .title{
-    width: 60%;
-    text-align: center;
-    margin: auto;
-}
-
-.blog .section-content .title h2{
+.blog .title h2{
     font-size: 40px;
     color: var(--light-one);
     text-transform: uppercase;
 }
 
-.blog .section-content .title p{
+.blog .title p{
     font-size: 18px;
     color: var(--light-one);
     margin-top: 20px;
 }
 
-.blog .section-content .cards{
+.blog .cards{
     /* display: grid;
     grid-template-columns: repeat(3, 1fr); */
     /* grid-gap: 50px; */
     
-    margin: 25px auto;
     display: flex;
     flex-wrap: wrap;
+    left: 50%;
+    /* position: absolute; */
+    /* align-items: center; */
+    justify-content: space-around;
+}
+
+
+.blog .cards .card{
+    width: 30rem;
+    height: 50vh;
+    padding: 1rem;
+    margin: 1% 1%;
+    background-color: var(--main-colour-3);
     
 }
 
-.blog .section-content .cards .card{
-    flex: 20%;
-    margin: 3% 3%;
-    width: 100%;
-    background-color: var(--main-colour-3);
-    position: relative;
-}
-
-.blog .section-content .cards .card img{
+.blog .cards .card img{
     width: 100%;
     height: auto;
 }
 
-.blog .section-content .cards .card .article{
+.blog .cards .card .article{
     padding: 15px 20px;
 }
 
-.blog .section-content .cards .card .article h4{
+.blog .cards .card .article h4{
     font-size: 24px;
     color: var(--light-three);
 }
 
-.blog .section-content .cards .card .article p{
+.blog .cards .card .article p{
     font-size: 16px;
     margin: 10px 0px;
     color: var(--light-three);
 }
 
-.blog .section-content .cards .card a{
+.blog .cards .card a{
     text-decoration: none;
     display: inline-block;
     background-color: var(--light-three);
@@ -452,14 +465,28 @@ header {
     margin-bottom: 20px;
 }
 
-.blog .section-content .button-article{
-    text-decoration: none;
-    display: inline-block;
-    background-color: var(--main-colour-2);
-    padding: 8px 15px;
-    margin-left: 20px;
+.blog .button-article{
+    width: 150px;
+    text-align: center;
     color: var(--light-three);
-    margin-bottom: 20px;
+    padding: 10px 24px;
+    background: var(--main-colour-2);
+    text-decoration: none;
+    transition: .6s;
+    border-radius: 5px;
+    border: 2px solid transparent;
+    margin-right: 10px;
+    text-transform: uppercase;
+    
+}
+
+.blog .button-article:hover{
+    background-color: transparent;
+    border: 2px solid var(--main-colour-2);
+    color: var(--main-colour-2);
+    transition: .4s;
+    cursor: pointer;
+    
 }
 
 /* end of blog */
@@ -472,6 +499,14 @@ header {
     text-align: center;
     color: var(--light-two);
     padding-top: 3%;
+}
+
+.contact h1 {
+    font-family: Lato;
+    color: #f1f1f1;
+    font-size: 45px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
 }
 /* end of contact */
 

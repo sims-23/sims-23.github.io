@@ -1,6 +1,6 @@
 
 /* responsive */
-
+/* 
 @media screen and (max-width: 1180px) {
     .about{
         width: 100%;
@@ -8,7 +8,19 @@
         padding: 70px 0px;
     }
     
-}
+} */
+
+@media screen and (max-width: 1293px) {
+    .skills-container{
+        flex-flow: column wrap;
+        align-items: center;
+    }
+
+    .skills .set{
+        width: 60%;
+    }
+    
+} 
 
 @media screen and (max-width: 650px) {
     .about .content img{
@@ -19,7 +31,9 @@
         font-size: 60px;
         margin-bottom: 25px;
     }
-
+    .skills .set{
+        width: 80%;
+    }
     
 }
 
@@ -69,6 +83,7 @@
     }
     .about-me .text {
         display: inline-block;
+        width: 95%;
     }
 
     .about-me img {
@@ -100,19 +115,32 @@
     }
     
 
+
     
   }
 
 
   
-  @media (max-width: 380px) {
+  @media (max-width: 450px) {
     .navbar .logo a{
       font-size: 27px;
+    }
+
+    .text h5 {
+      font-size: 20px;
+    }
+
+    .text p {
+      font-size: 14px;
+    }
+    
+    .about-me button{
+      width: 100px;
     }
   }
 
 @media screen and (max-width: 768px){
-    .blog .section-content .cards .card{
+    /* .blog .section-content .cards .card{
         flex-direction: column;
         flex:10%;
         height: 10%;
@@ -120,11 +148,10 @@
         position: relative;
     }
 
-    .my_projects {
-        height: 200vh;
-    }
 
     .blog {
         height: 200vh;
-    }
+    } */
+
+   
 }
