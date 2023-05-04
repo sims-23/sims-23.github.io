@@ -22,8 +22,29 @@
     
 } 
 
+@media screen and (max-width: 1000px) {
+  
+
+  .about-me .container .left{
+    float: none;
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+    
+
+  }
+  .about-me .container .left img{
+    width: 30%;
+  } 
+
+  .about-me .container .left h5{
+    margin-bottom: 5%;
+  }
+  
+  
+} 
 @media screen and (max-width: 650px) {
-    .about .content img{
+    .about .container img{
         margin-bottom: 35px;
     }
 
@@ -75,19 +96,18 @@
       margin-left: 0px;
     }
 
-    .content {
-        display: inline-block;
-        text-align: center;
-        align-items: center;
-        
-    }
-    .about-me .text {
-        display: inline-block;
-        width: 95%;
+    .about-me .container {
+        /* display: inline-block;
+        align-items: center; */
+        width: 90%;
     }
 
-    .about-me img {
-        margin-bottom: 24px;
+    .about-me .container p {
+      margin: 0px auto;
+    }
+
+    .about-me .container .left img {
+      margin-bottom: 24px;
     }
   }
 
