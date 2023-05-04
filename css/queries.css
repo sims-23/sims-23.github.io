@@ -1,26 +1,5 @@
 
 /* responsive */
-/* 
-@media screen and (max-width: 1180px) {
-    .about{
-        width: 100%;
-        height: auto;
-        padding: 70px 0px;
-    }
-    
-} */
-
-@media screen and (max-width: 1293px) {
-    .skills-container{
-        flex-flow: column wrap;
-        align-items: center;
-    }
-
-    .skills .set{
-        width: 60%;
-    }
-    
-} 
 
 @media screen and (max-width: 1000px) {
   
@@ -40,22 +19,11 @@
   .about-me .container .left h5{
     margin-bottom: 5%;
   }
-  
-  
 } 
 @media screen and (max-width: 650px) {
-    .about .container img{
+    .about .container .left img{
         margin-bottom: 35px;
     }
-
-    .text h1{
-        font-size: 60px;
-        margin-bottom: 25px;
-    }
-    .skills .set{
-        width: 80%;
-    }
-    
 }
 
   @media (max-width: 868px) {
@@ -102,7 +70,7 @@
         width: 90%;
     }
 
-    .about-me .container p {
+    .about-me .container .left p {
       margin: 0px auto;
     }
 
@@ -132,11 +100,7 @@
     
     .hero-section .button {
         font-size: 14px;
-    }
-    
-
-
-    
+    }    
   }
 
 
@@ -158,20 +122,3 @@
       width: 100px;
     }
   }
-
-@media screen and (max-width: 768px){
-    /* .blog .section-content .cards .card{
-        flex-direction: column;
-        flex:10%;
-        height: 10%;
-        background-color: var(--main-colour-3);
-        position: relative;
-    }
-
-
-    .blog {
-        height: 200vh;
-    } */
-
-   
-}
