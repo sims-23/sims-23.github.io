@@ -274,7 +274,7 @@ header {
 .contact {
     background-color: var(--dark-four);
     width: 100%;
-    height: 90vh;
+    height: 50vh;
     text-align: center;
     color: var(--light-two);
     padding-top: 3%;
@@ -293,14 +293,6 @@ header {
     margin: auto auto;
     font-size: 20px;
     padding-bottom: 3%;
-}
-
-.contact img {
-    width: 20%;
-    height: auto;
-    border-radius: 2px;
-    margin: auto auto;
-    font-size: 25px;
 }
 /* end of contact */
 
