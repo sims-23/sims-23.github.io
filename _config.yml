@@ -194,6 +194,7 @@ exclude:
   - vendor
   - _news
   - _includes/news.liquid
+  - dropdown.md
 keep_files:
   - CNAME
   - .nojekyll
