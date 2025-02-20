@@ -195,6 +195,16 @@ exclude:
   - _news
   - _includes/news.liquid
   - dropdown.md
+  - _layouts/bib.liquid
+  - _pages/publications.md
+  - _layouts/bib.liquid
+  - _includes/bib_search.liquid
+  - _includes/citation.liquid
+  - _includes/selected_papers.liquid
+  - _plugins/google-scholar-citations.rb
+  - _plugins/hide-custom-bibtex.rb
+  - _plugins/inspirehep-citations.rb
+  - _bibliography
 keep_files:
   - CNAME
   - .nojekyll
