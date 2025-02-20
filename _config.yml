@@ -194,7 +194,7 @@ exclude:
   - vendor
   - _news
   - _includes/news.liquid
-  - dropdown.md
+  - _pages/dropdown.md
   - _layouts/bib.liquid
   - _pages/publications.md
   - _layouts/bib.liquid
