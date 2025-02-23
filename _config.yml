@@ -2,7 +2,8 @@
 # Site settings
 # -----------------------------------------------------------------------------
 
-title: Hi! I'm Sim # the website title (if blank, full name will be used instead)
+title: Sim S. # the website title (if blank, full name will be used instead)
+header_note: Welcome! I'm Sim.
 first_name: Sim
 middle_name:
 last_name: S.
