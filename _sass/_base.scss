@@ -17,6 +17,7 @@ li,
 span,
 strong {
   color: var(--global-text-color);
+  font-family: "Gill Sans", Calibri, "Trebuchet MS", sans-serif;
 }
 
 hr {
@@ -194,6 +195,7 @@ ul.task-list input[type="checkbox"] {
 
 .profile {
   width: 100%;
+  text-align: center;
 
   .more-info {
     margin-bottom: 5px;
@@ -218,6 +220,10 @@ ul.task-list input[type="checkbox"] {
 @media (min-width: 576px) {
   .profile {
     width: 30%;
+
+    img {
+      width: 80%;
+    }
 
     .address {
       p {
@@ -401,7 +407,7 @@ ul.task-list input[type="checkbox"] {
   text-align: center;
 
   .contact-icons {
-    font-size: 4rem;
+    font-size: 3rem;
 
     a {
       img {
@@ -437,7 +443,7 @@ ul.task-list input[type="checkbox"] {
   }
 
   .contact-note {
-    font-size: 0.8rem;
+    font-size: 1rem;
   }
 }
 
